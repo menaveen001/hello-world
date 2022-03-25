@@ -6,6 +6,7 @@ func main() {
 	fmt.Println("hello world")
 	addition()
 	substraction()
+	multipiction()
 }
 func addition() {
 
@@ -18,4 +19,11 @@ func substraction() {
 	a, b := 8, 5
 	sub := a - b
 	fmt.Println(sub)
+}
+
+func multipiction() {
+
+	a, b := 8, 5
+	multi := a * b
+	fmt.Println(multi)
 }
