@@ -23,7 +23,7 @@ func substraction() {
 
 func multipiction() {
 
-	a, b := 8, 5
+	a, b := 10, 5
 	multi := a * b
 	fmt.Println(multi)
 }
