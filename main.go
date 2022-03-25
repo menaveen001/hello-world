@@ -7,6 +7,7 @@ func main() {
 	addition()
 	substraction()
 	multipiction()
+	getUserInput()
 }
 func addition() {
 
@@ -26,4 +27,15 @@ func multipiction() {
 	a, b := 10, 5
 	multi := a * b
 	fmt.Println(multi)
+}
+func getUserInput() {
+	var FirstName string
+	var LastName string
+
+	fmt.Println("Enter your first name")
+	fmt.Scan(&FirstName)
+
+	fmt.Println("Enter your last name")
+	fmt.Scan(&LastName)
+
 }
