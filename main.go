@@ -8,6 +8,7 @@ func main() {
 	substraction()
 	multipiction()
 	getUserInput()
+	listOfMedicins()
 }
 func addition() {
 
@@ -41,5 +42,16 @@ func getUserInput() {
 
 	fmt.Println("Enter your age")
 	fmt.Scan(&age)
+
+	fmt.Printf("welcome to Pal Medical Store %v\n", FirstName)
+}
+func listOfMedicins() {
+
+	fever := "Calpol, Dolo, Fenceta "
+	syrup := "torex, zedex, corex,"
+	injectins := "deca, dynapar, avil"
+	mulltivitamins := " revital, multiplex, zincovit"
+
+	fmt.Printf("This is list of medicins:\n fever:- %v\n syrup:- %v\n inj:- %v\n vitamin:- %v\n", fever, syrup, injectins, mulltivitamins)
 
 }
