@@ -1,6 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
+var fever = "Calpol, Dolo, Fenceta "
+var syrup = "torex, zedex, corex"
+var injectins = "deca, dynapar, avil"
+var mulltivitamins = " revital, multiplex, zincovit"
 
 func main() {
 	fmt.Println("hello world")
@@ -9,7 +16,9 @@ func main() {
 	multipiction()
 	getUserInput()
 	listOfMedicins()
+	order()
 }
+
 func addition() {
 
 	a, b := 2, 3
@@ -47,11 +56,12 @@ func getUserInput() {
 }
 func listOfMedicins() {
 
-	fever := "Calpol, Dolo, Fenceta "
-	syrup := "torex, zedex, corex,"
-	injectins := "deca, dynapar, avil"
-	mulltivitamins := " revital, multiplex, zincovit"
-
 	fmt.Printf("This is list of medicins:\n fever:- %v\n syrup:- %v\n inj:- %v\n vitamin:- %v\n", fever, syrup, injectins, mulltivitamins)
+
+}
+func order() {
+
+	fmt.Println("give your order:")
+	fmt.Scan(&fever, syrup, injectins, mulltivitamins)
 
 }
